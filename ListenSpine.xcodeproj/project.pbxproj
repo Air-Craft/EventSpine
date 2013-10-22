@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6FC5F381816D7A600F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
+		A6FC5F3A1816D7A600F953CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F391816D7A600F953CD /* CoreGraphics.framework */; };
+		A6FC5F3C1816D7A600F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
+		A6FC5F421816D7A600F953CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F401816D7A600F953CD /* InfoPlist.strings */; };
+		A6FC5F441816D7A600F953CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F431816D7A600F953CD /* main.m */; };
+		A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */; };
+		A6FC5F4B1816D7A600F953CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F491816D7A600F953CD /* Main.storyboard */; };
+		A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */; };
+		A6FC5F501816D7A600F953CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F4F1816D7A600F953CD /* Images.xcassets */; };
+		A6FC5F571816D7A600F953CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F561816D7A600F953CD /* XCTest.framework */; };
+		A6FC5F581816D7A700F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
+		A6FC5F591816D7A700F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
+		A6FC5F611816D7A700F953CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */; };
+		A6FC5F631816D7A700F953CD /* ListenSpineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F621816D7A700F953CD /* ListenSpineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FC5F5A1816D7A700F953CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FC5F2C1816D7A600F953CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FC5F331816D7A600F953CD;
+			remoteInfo = ListenSpine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6FC5F341816D7A600F953CD /* ListenSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6FC5F3B1816D7A600F953CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6FC5F3F1816D7A600F953CD /* ListenSpine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ListenSpine-Info.plist"; sourceTree = "<group>"; };
+		A6FC5F411816D7A600F953CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6FC5F431816D7A600F953CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6FC5F451816D7A600F953CD /* ListenSpine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ListenSpine-Prefix.pch"; sourceTree = "<group>"; };
+		A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = l5CCAppDelegate.h; sourceTree = "<group>"; };
+		A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = l5CCAppDelegate.m; sourceTree = "<group>"; };
+		A6FC5F4A1816D7A600F953CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FC5F4C1816D7A600F953CD /* l5CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = l5CCViewController.h; sourceTree = "<group>"; };
+		A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = l5CCViewController.m; sourceTree = "<group>"; };
+		A6FC5F4F1816D7A600F953CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6FC5F551816D7A600F953CD /* ListenSpineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListenSpineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FC5F561816D7A600F953CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A6FC5F5E1816D7A700F953CD /* ListenSpineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ListenSpineTests-Info.plist"; sourceTree = "<group>"; };
+		A6FC5F601816D7A700F953CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6FC5F621816D7A700F953CD /* ListenSpineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenSpineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FC5F311816D7A600F953CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F3A1816D7A600F953CD /* CoreGraphics.framework in Frameworks */,
+				A6FC5F3C1816D7A600F953CD /* UIKit.framework in Frameworks */,
+				A6FC5F381816D7A600F953CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FC5F521816D7A600F953CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F571816D7A600F953CD /* XCTest.framework in Frameworks */,
+				A6FC5F591816D7A700F953CD /* UIKit.framework in Frameworks */,
+				A6FC5F581816D7A700F953CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6FC5F2B1816D7A600F953CD = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F3D1816D7A600F953CD /* ListenSpine */,
+				A6FC5F5C1816D7A700F953CD /* ListenSpineTests */,
+				A6FC5F361816D7A600F953CD /* Frameworks */,
+				A6FC5F351816D7A600F953CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FC5F351816D7A600F953CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F341816D7A600F953CD /* ListenSpine.app */,
+				A6FC5F551816D7A600F953CD /* ListenSpineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FC5F361816D7A600F953CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F371816D7A600F953CD /* Foundation.framework */,
+				A6FC5F391816D7A600F953CD /* CoreGraphics.framework */,
+				A6FC5F3B1816D7A600F953CD /* UIKit.framework */,
+				A6FC5F561816D7A600F953CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FC5F3D1816D7A600F953CD /* ListenSpine */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */,
+				A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */,
+				A6FC5F491816D7A600F953CD /* Main.storyboard */,
+				A6FC5F4C1816D7A600F953CD /* l5CCViewController.h */,
+				A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */,
+				A6FC5F4F1816D7A600F953CD /* Images.xcassets */,
+				A6FC5F3E1816D7A600F953CD /* Supporting Files */,
+			);
+			path = ListenSpine;
+			sourceTree = "<group>";
+		};
+		A6FC5F3E1816D7A600F953CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F3F1816D7A600F953CD /* ListenSpine-Info.plist */,
+				A6FC5F401816D7A600F953CD /* InfoPlist.strings */,
+				A6FC5F431816D7A600F953CD /* main.m */,
+				A6FC5F451816D7A600F953CD /* ListenSpine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FC5F5C1816D7A700F953CD /* ListenSpineTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F621816D7A700F953CD /* ListenSpineTests.m */,
+				A6FC5F5D1816D7A700F953CD /* Supporting Files */,
+			);
+			path = ListenSpineTests;
+			sourceTree = "<group>";
+		};
+		A6FC5F5D1816D7A700F953CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F5E1816D7A700F953CD /* ListenSpineTests-Info.plist */,
+				A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FC5F331816D7A600F953CD /* ListenSpine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FC5F661816D7A700F953CD /* Build configuration list for PBXNativeTarget "ListenSpine" */;
+			buildPhases = (
+				A6FC5F301816D7A600F953CD /* Sources */,
+				A6FC5F311816D7A600F953CD /* Frameworks */,
+				A6FC5F321816D7A600F953CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ListenSpine;
+			productName = ListenSpine;
+			productReference = A6FC5F341816D7A600F953CD /* ListenSpine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FC5F541816D7A600F953CD /* ListenSpineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FC5F691816D7A700F953CD /* Build configuration list for PBXNativeTarget "ListenSpineTests" */;
+			buildPhases = (
+				A6FC5F511816D7A600F953CD /* Sources */,
+				A6FC5F521816D7A600F953CD /* Frameworks */,
+				A6FC5F531816D7A600F953CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FC5F5B1816D7A700F953CD /* PBXTargetDependency */,
+			);
+			name = ListenSpineTests;
+			productName = ListenSpineTests;
+			productReference = A6FC5F551816D7A600F953CD /* ListenSpineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FC5F2C1816D7A600F953CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = l5CC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Club 15CC";
+				TargetAttributes = {
+					A6FC5F541816D7A600F953CD = {
+						TestTargetID = A6FC5F331816D7A600F953CD;
+					};
+				};
+			};
+			buildConfigurationList = A6FC5F2F1816D7A600F953CD /* Build configuration list for PBXProject "ListenSpine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6FC5F2B1816D7A600F953CD;
+			productRefGroup = A6FC5F351816D7A600F953CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FC5F331816D7A600F953CD /* ListenSpine */,
+				A6FC5F541816D7A600F953CD /* ListenSpineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6FC5F321816D7A600F953CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F501816D7A600F953CD /* Images.xcassets in Resources */,
+				A6FC5F421816D7A600F953CD /* InfoPlist.strings in Resources */,
+				A6FC5F4B1816D7A600F953CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FC5F531816D7A600F953CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F611816D7A700F953CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FC5F301816D7A600F953CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F441816D7A600F953CD /* main.m in Sources */,
+				A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */,
+				A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FC5F511816D7A600F953CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FC5F631816D7A700F953CD /* ListenSpineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FC5F5B1816D7A700F953CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FC5F331816D7A600F953CD /* ListenSpine */;
+			targetProxy = A6FC5F5A1816D7A700F953CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6FC5F401816D7A600F953CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FC5F411816D7A600F953CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A6FC5F491816D7A600F953CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FC5F4A1816D7A600F953CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FC5F601816D7A700F953CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6FC5F641816D7A700F953CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6FC5F651816D7A700F953CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6FC5F671816D7A700F953CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ListenSpine/ListenSpine-Prefix.pch";
+				INFOPLIST_FILE = "ListenSpine/ListenSpine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A6FC5F681816D7A700F953CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ListenSpine/ListenSpine-Prefix.pch";
+				INFOPLIST_FILE = "ListenSpine/ListenSpine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A6FC5F6A1816D7A700F953CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ListenSpine.app/ListenSpine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ListenSpine/ListenSpine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ListenSpineTests/ListenSpineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A6FC5F6B1816D7A700F953CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ListenSpine.app/ListenSpine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ListenSpine/ListenSpine-Prefix.pch";
+				INFOPLIST_FILE = "ListenSpineTests/ListenSpineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FC5F2F1816D7A600F953CD /* Build configuration list for PBXProject "ListenSpine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FC5F641816D7A700F953CD /* Debug */,
+				A6FC5F651816D7A700F953CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FC5F661816D7A700F953CD /* Build configuration list for PBXNativeTarget "ListenSpine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FC5F671816D7A700F953CD /* Debug */,
+				A6FC5F681816D7A700F953CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6FC5F691816D7A700F953CD /* Build configuration list for PBXNativeTarget "ListenSpineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FC5F6A1816D7A700F953CD /* Debug */,
+				A6FC5F6B1816D7A700F953CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6FC5F2C1816D7A600F953CD /* Project object */;
+}
