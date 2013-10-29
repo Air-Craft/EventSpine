@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ESMetaMacros.h"
+#import "ESMeta.h"
 
 /////////////////////////////////////////////////////////////////////////
 #pragma mark - Defs
@@ -28,6 +28,7 @@
 //    _Pragma("clang diagnostic pop")
 //#endif
 
+
 #define ESLocalizeArgs(...) \
     es_metamacro_concat(ESLocalizeArgs, es_metamacro_argcount(__VA_ARGS__))(__VA_ARGS__)
 
@@ -35,17 +36,16 @@
 #define ESLocalizeArgs1(VAR1) \
 { \
 va_list argList; va_start(argList, target); \
-if (__typeof__(VAR1) == float) \
-    VAR1 = (float)va_arg(argList, double); \
-else \
-    VAR1 = va_arg(argList, __unsafe_unretained __typeof__(VAR1)); \
+VAR1 = va_arg(argList, __unsafe_unretained __typeof__(VAR1)); \
+va_end(argList); \
 }
 
 #define ESLocalizeArgs2(VAR1, VAR2) \
 { \
 va_list argList; va_start(argList, target); \
-VAR1 = va_arg(argList, id); \
-VAR2 = va_arg(argList, id); \
+__es_var_arg(&argList, &VAR1); \
+__es_var_arg(&argList, &VAR2); \
+va_end(argList); \
 }
 
 #define ESLocalizeArgs3(VAR1, VAR2, VAR3) \
@@ -54,8 +54,8 @@ va_list argList; va_start(argList, target); \
 VAR1 = va_arg(argList, id); \
 VAR2 = va_arg(argList, id); \
 VAR3 = va_arg(argList, id); \
+va_end(argList); \
 }
-
 
 
 typedef void (^ESEventBlk)(id target, ...);
@@ -79,7 +79,10 @@ typedef void (^ESEventBlk)(id target, ...);
  Listen to the event only once, removing the observer when it is triggered 
  @return Opaque object referencing the listener
  */
-- (id)listenOnceTo:(NSString *)eventName onObject:(id)targetObj usingBlock:(void (^)(NSNotification *notif))block;
+- (id)listenOnceTo:(NSString *)eventName on:(id)targetObj using:(void (^)(NSNotification *notif))block;
+
+- (id)listenOnceTo:(NSString *)eventName on:(id)targetObj using:(void (^)(NSNotification *notif))block persist:(BOOL)shouldPersist;
+
 
 /** 
  Same as above with a custom queue 

@@ -10,6 +10,35 @@
 #define ListenSpine_ESMetaMacros_h
 
 
+/////////////////////////////////////////////////////////////////////////
+#pragma mark - Variadic helpers
+/////////////////////////////////////////////////////////////////////////
+
+#define __ES_OVERLOADABLE __attribute__((__overloadable__, __always_inline__))
+
+/** Overloaded functions to silently handle casting when variadic functions promote short types, e.g. float -> double */
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, signed char *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, unsigned char *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, signed short *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, unsigned short *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, signed int *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, unsigned int *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, signed long *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, unsigned long *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, signed long long *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, unsigned long long *var);
+
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, float *var);
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, double *var);
+
+void __ES_OVERLOADABLE __es_var_arg(va_list *argList, id *var);
+
+
+
+/////////////////////////////////////////////////////////////////////////
+#pragma mark - Meta Macros
+/////////////////////////////////////////////////////////////////////////
+
 /**
  * Macros for metaprogramming
  *
@@ -673,4 +702,60 @@ es_metamacro_concat(es_metamacro_if_eq_recursive0_, VALUE)
 #define es_metamacro_drop20(...) es_metamacro_drop19(es_metamacro_tail(__VA_ARGS__))
 
 #endif
+
+
+/////////////////////////////////////////////////////////////////////////
+#pragma mark - Variadic to local variable utility macros
+/////////////////////////////////////////////////////////////////////////
+
+/**
+ Convert varid
+ */
+#define localize(...) \
+    try {} @finally {} \
+    es_metamacro_concat(__es_localize, es_metamacro_argcount(__VA_ARGS__))(target, __VA_ARGS__)
+
+/** Conservative version (using British spelling). Pass any variable name as the first argument to help position the variadic functions */
+#define localise(SKIP, ...) \
+    try {} @finally {} \
+    es_metamacro_concat(__es_localize, es_metamacro_argcount(__VA_ARGS__))(SKIP, __VA_ARGS__)
+
+/**
+ Private handlers for up to 10 variadic parameters
+ */
+#define __es_localize1(SKIP, VAR1) \
+    {\
+    va_list argList; va_start(argList, SKIP); \
+    __es_var_arg(&argList, &VAR1); \
+    va_end(argList); \
+    \}
+
+#define __es_localize2(SKIP, VAR1, VAR2) \
+    {\
+    va_list argList; va_start(argList, SKIP); \
+    __es_var_arg(&argList, &VAR1); \
+    __es_var_arg(&argList, &VAR2); \
+    va_end(argList); \
+    }
+
+#define __es_localize3(SKIP, VAR1, VAR2, VAR3) \
+    {\
+    va_list argList; va_start(argList, SKIP); \
+    __es_var_arg(&argList, &VAR1); \
+    __es_var_arg(&argList, &VAR2); \
+    __es_var_arg(&argList, &VAR3); \
+    va_end(argList); \
+    }
+
+#define __es_localize4(SKIP, VAR1, VAR2, VAR3, VAR4) \
+    {\
+    va_list argList; va_start(argList, SKIP); \
+    __es_var_arg(&argList, &VAR1); \
+    __es_var_arg(&argList, &VAR2); \
+    __es_var_arg(&argList, &VAR3); \
+    __es_var_arg(&argList, &VAR4); \
+    va_end(argList); \
+    }
+
+
 

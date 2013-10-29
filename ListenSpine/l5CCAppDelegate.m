@@ -8,28 +8,41 @@
 
 #import "l5CCAppDelegate.h"
 
+#import "ESMeta.h"
 #import "NSObject+EventSpine.h"
 
 @implementation l5CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ESEventBlk blk = ^(id target, ...) {
-        NSString *arg1, *arg2;
-        float arg3=0.0, arg4=0.0;
-        ESLocalizeArgs(arg3);
-
-        NSLog(@"%@ %@ %f %f", arg1, arg2, arg3, arg4);
-    };
-    
-    NSString *yo = @"sds";
-    blk(yo, 2.0, @"hi", @"ho", @"hey");
-    
+    [self doSomething];
     
     // Override point for customization after application launch.
     return YES;
 }
-							
+
+- (void)doSomething
+{
+    ESEventBlk blk = ^(id target, ...) {
+        NSString *str1, *str2;
+        float f1;
+        long long ll;
+        @localize(ll, f1, str1);
+        
+        NSLog(@"%lld %f %@ %@", ll, f1, str1, str2);
+    };
+    
+    
+    NSString *yo = @"sds";
+    
+    
+    
+    blk(yo, 1231241434LL, 3.0f, nil);
+    
+
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

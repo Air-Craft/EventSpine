@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6EC598F181FEEAE00C67AAB /* ESMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EC598E181FE31200C67AAB /* ESMeta.m */; };
 		A6FC5F381816D7A600F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
 		A6FC5F3A1816D7A600F953CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F391816D7A600F953CD /* CoreGraphics.framework */; };
 		A6FC5F3C1816D7A600F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6A15AFD181ED6D90071DA03 /* ESMetaMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESMetaMacros.h; sourceTree = "<group>"; };
+		A6A15AFD181ED6D90071DA03 /* ESMeta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESMeta.h; sourceTree = "<group>"; };
+		A6EC598E181FE31200C67AAB /* ESMeta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESMeta.m; sourceTree = "<group>"; };
 		A6FC5F341816D7A600F953CD /* ListenSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,7 +118,7 @@
 		A6FC5F3D1816D7A600F953CD /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A6FC5F6C1816D7FC00F953CD /* ListenSpine */,
+				A6FC5F6C1816D7FC00F953CD /* EventSpine */,
 				A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */,
 				A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */,
 				A6FC5F491816D7A600F953CD /* Main.storyboard */,
@@ -158,13 +160,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A6FC5F6C1816D7FC00F953CD /* ListenSpine */ = {
+		A6FC5F6C1816D7FC00F953CD /* EventSpine */ = {
 			isa = PBXGroup;
 			children = (
 				A6FC5F6D1816D7FC00F953CD /* NSObject+EventSpine.h */,
 				A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */,
-				A6A15AFD181ED6D90071DA03 /* ESMetaMacros.h */,
+				A6A15AFD181ED6D90071DA03 /* ESMeta.h */,
+				A6EC598E181FE31200C67AAB /* ESMeta.m */,
 			);
+			name = EventSpine;
 			path = ListenSpine;
 			sourceTree = "<group>";
 		};
@@ -269,6 +273,7 @@
 				A6FC5F441816D7A600F953CD /* main.m in Sources */,
 				A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */,
 				A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */,
+				A6EC598F181FEEAE00C67AAB /* ESMeta.m in Sources */,
 				A6FC5F6F1816D7FC00F953CD /* NSObject+EventSpine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
