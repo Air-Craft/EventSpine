@@ -8,10 +8,24 @@
 
 #import "l5CCAppDelegate.h"
 
+#import "NSObject+EventSpine.h"
+
 @implementation l5CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    ESEventBlk blk = ^(id target, ...) {
+        NSString *arg1, *arg2;
+        float arg3=0.0, arg4=0.0;
+        ESLocalizeArgs(arg3);
+
+        NSLog(@"%@ %@ %f %f", arg1, arg2, arg3, arg4);
+    };
+    
+    NSString *yo = @"sds";
+    blk(yo, 2.0, @"hi", @"ho", @"hey");
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

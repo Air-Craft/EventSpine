@@ -21,6 +21,7 @@
 		A6FC5F591816D7A700F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
 		A6FC5F611816D7A700F953CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */; };
 		A6FC5F631816D7A700F953CD /* ListenSpineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F621816D7A700F953CD /* ListenSpineTests.m */; };
+		A6FC5F6F1816D7FC00F953CD /* NSObject+EventSpine.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6A15AFD181ED6D90071DA03 /* ESMetaMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESMetaMacros.h; sourceTree = "<group>"; };
 		A6FC5F341816D7A600F953CD /* ListenSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,8 @@
 		A6FC5F5E1816D7A700F953CD /* ListenSpineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ListenSpineTests-Info.plist"; sourceTree = "<group>"; };
 		A6FC5F601816D7A700F953CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A6FC5F621816D7A700F953CD /* ListenSpineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenSpineTests.m; sourceTree = "<group>"; };
+		A6FC5F6D1816D7FC00F953CD /* NSObject+EventSpine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EventSpine.h"; sourceTree = "<group>"; };
+		A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EventSpine.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 		A6FC5F2B1816D7A600F953CD = {
 			isa = PBXGroup;
 			children = (
-				A6FC5F3D1816D7A600F953CD /* ListenSpine */,
+				A6FC5F3D1816D7A600F953CD /* App */,
 				A6FC5F5C1816D7A700F953CD /* ListenSpineTests */,
 				A6FC5F361816D7A600F953CD /* Frameworks */,
 				A6FC5F351816D7A600F953CD /* Products */,
@@ -109,9 +113,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6FC5F3D1816D7A600F953CD /* ListenSpine */ = {
+		A6FC5F3D1816D7A600F953CD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A6FC5F6C1816D7FC00F953CD /* ListenSpine */,
 				A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */,
 				A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */,
 				A6FC5F491816D7A600F953CD /* Main.storyboard */,
@@ -120,6 +125,7 @@
 				A6FC5F4F1816D7A600F953CD /* Images.xcassets */,
 				A6FC5F3E1816D7A600F953CD /* Supporting Files */,
 			);
+			name = App;
 			path = ListenSpine;
 			sourceTree = "<group>";
 		};
@@ -150,6 +156,16 @@
 				A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FC5F6C1816D7FC00F953CD /* ListenSpine */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC5F6D1816D7FC00F953CD /* NSObject+EventSpine.h */,
+				A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */,
+				A6A15AFD181ED6D90071DA03 /* ESMetaMacros.h */,
+			);
+			path = ListenSpine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +269,7 @@
 				A6FC5F441816D7A600F953CD /* main.m in Sources */,
 				A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */,
 				A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */,
+				A6FC5F6F1816D7FC00F953CD /* NSObject+EventSpine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +478,7 @@
 				A6FC5F681816D7A700F953CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6FC5F691816D7A700F953CD /* Build configuration list for PBXNativeTarget "ListenSpineTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +487,7 @@
 				A6FC5F6B1816D7A700F953CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
