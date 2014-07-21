@@ -7,23 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A68C8F4C197D31A40060F973 /* _ESWeakKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C8F4B197D31A40060F973 /* _ESWeakKeyMutableDictionary.m */; };
-		A68C8F4F197D3C5A0060F973 /* EventSpine_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C8F4D197D3B3E0060F973 /* EventSpine_Private.m */; };
+		A63222AD197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */; };
+		A63222AE197D55AA00607F40 /* EventSpine_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222AA197D55AA00607F40 /* EventSpine_Private.m */; };
+		A63222AF197D55AA00607F40 /* NSObject+EventSpine.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */; };
+		A63222BE197D55B700607F40 /* ACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222B1197D55B700607F40 /* ACAppDelegate.m */; };
+		A63222BF197D55B700607F40 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222B3197D55B700607F40 /* ACViewController.m */; };
+		A63222C0197D55B700607F40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222B4197D55B700607F40 /* main.m */; };
+		A63222C3197D55B700607F40 /* EventSpine-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63222BB197D55B700607F40 /* EventSpine-Info.plist */; };
+		A63222C4197D55B700607F40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63222BD197D55B700607F40 /* Images.xcassets */; };
+		A63222C8197D564100607F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63222C6197D564100607F40 /* Main.storyboard */; };
+		A63222CB197D564A00607F40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A63222C9197D564A00607F40 /* InfoPlist.strings */; };
 		A6FC5F381816D7A600F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
 		A6FC5F3A1816D7A600F953CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F391816D7A600F953CD /* CoreGraphics.framework */; };
 		A6FC5F3C1816D7A600F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
-		A6FC5F421816D7A600F953CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F401816D7A600F953CD /* InfoPlist.strings */; };
-		A6FC5F441816D7A600F953CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F431816D7A600F953CD /* main.m */; };
-		A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */; };
-		A6FC5F4B1816D7A600F953CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F491816D7A600F953CD /* Main.storyboard */; };
-		A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */; };
-		A6FC5F501816D7A600F953CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F4F1816D7A600F953CD /* Images.xcassets */; };
 		A6FC5F571816D7A600F953CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F561816D7A600F953CD /* XCTest.framework */; };
 		A6FC5F581816D7A700F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
 		A6FC5F591816D7A700F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
-		A6FC5F611816D7A700F953CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */; };
-		A6FC5F631816D7A700F953CD /* EventSpineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F621816D7A700F953CD /* EventSpineTests.m */; };
-		A6FC5F6F1816D7FC00F953CD /* NSObject+EventSpine.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,32 +36,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6694E17182271710037F365 /* ESDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDefs.h; sourceTree = "<group>"; };
-		A68C8F49197D27260060F973 /* EventSpine_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventSpine_Private.h; sourceTree = "<group>"; };
-		A68C8F4A197D31A40060F973 /* _ESWeakKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ESWeakKeyMutableDictionary.h; sourceTree = "<group>"; };
-		A68C8F4B197D31A40060F973 /* _ESWeakKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ESWeakKeyMutableDictionary.m; sourceTree = "<group>"; };
-		A68C8F4D197D3B3E0060F973 /* EventSpine_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSpine_Private.m; sourceTree = "<group>"; };
+		A63222A6197D55AA00607F40 /* _ESWeakKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ESWeakKeyMutableDictionary.h; sourceTree = "<group>"; };
+		A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ESWeakKeyMutableDictionary.m; sourceTree = "<group>"; };
+		A63222A8197D55AA00607F40 /* ESDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDefs.h; sourceTree = "<group>"; };
+		A63222A9197D55AA00607F40 /* EventSpine_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSpine_Private.h; sourceTree = "<group>"; };
+		A63222AA197D55AA00607F40 /* EventSpine_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSpine_Private.m; sourceTree = "<group>"; };
+		A63222AB197D55AA00607F40 /* NSObject+EventSpine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EventSpine.h"; sourceTree = "<group>"; };
+		A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EventSpine.m"; sourceTree = "<group>"; };
+		A63222B0197D55B700607F40 /* ACAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACAppDelegate.h; path = Project/ACAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		A63222B1197D55B700607F40 /* ACAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACAppDelegate.m; path = Project/ACAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		A63222B2197D55B700607F40 /* ACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACViewController.h; path = Project/ACViewController.h; sourceTree = SOURCE_ROOT; };
+		A63222B3197D55B700607F40 /* ACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACViewController.m; path = Project/ACViewController.m; sourceTree = SOURCE_ROOT; };
+		A63222B4197D55B700607F40 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Project/main.m; sourceTree = SOURCE_ROOT; };
+		A63222BB197D55B700607F40 /* EventSpine-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "EventSpine-Info.plist"; path = "Project/EventSpine-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A63222BC197D55B700607F40 /* EventSpine-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EventSpine-Prefix.pch"; path = "Project/EventSpine-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A63222BD197D55B700607F40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Project/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		A63222C7197D564100607F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Project/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A63222CA197D564A00607F40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Project/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		A6FC5F341816D7A600F953CD /* EventSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A6FC5F3B1816D7A600F953CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A6FC5F3F1816D7A600F953CD /* EventSpine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventSpine-Info.plist"; sourceTree = "<group>"; };
-		A6FC5F411816D7A600F953CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A6FC5F431816D7A600F953CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A6FC5F451816D7A600F953CD /* EventSpine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventSpine-Prefix.pch"; sourceTree = "<group>"; };
-		A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = l5CCAppDelegate.h; sourceTree = "<group>"; };
-		A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = l5CCAppDelegate.m; sourceTree = "<group>"; };
-		A6FC5F4A1816D7A600F953CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A6FC5F4C1816D7A600F953CD /* l5CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = l5CCViewController.h; sourceTree = "<group>"; };
-		A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = l5CCViewController.m; sourceTree = "<group>"; };
-		A6FC5F4F1816D7A600F953CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A6FC5F551816D7A600F953CD /* EventSpineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventSpineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F561816D7A600F953CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A6FC5F5E1816D7A700F953CD /* EventSpineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventSpineTests-Info.plist"; sourceTree = "<group>"; };
-		A6FC5F601816D7A700F953CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A6FC5F621816D7A700F953CD /* EventSpineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventSpineTests.m; sourceTree = "<group>"; };
-		A6FC5F6D1816D7FC00F953CD /* NSObject+EventSpine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EventSpine.h"; sourceTree = "<group>"; };
-		A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EventSpine.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +85,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A63222A5197D55AA00607F40 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A63222A6197D55AA00607F40 /* _ESWeakKeyMutableDictionary.h */,
+				A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */,
+				A63222A8197D55AA00607F40 /* ESDefs.h */,
+				A63222A9197D55AA00607F40 /* EventSpine_Private.h */,
+				A63222AA197D55AA00607F40 /* EventSpine_Private.m */,
+				A63222AB197D55AA00607F40 /* NSObject+EventSpine.h */,
+				A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A63222C5197D562200607F40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A63222C9197D564A00607F40 /* InfoPlist.strings */,
+				A63222C6197D564100607F40 /* Main.storyboard */,
+				A63222B4197D55B700607F40 /* main.m */,
+				A63222BB197D55B700607F40 /* EventSpine-Info.plist */,
+				A63222BC197D55B700607F40 /* EventSpine-Prefix.pch */,
+				A63222BD197D55B700607F40 /* Images.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A6FC5F2B1816D7A600F953CD = {
 			isa = PBXGroup;
 			children = (
-				A6FC5F3D1816D7A600F953CD /* App */,
-				A6FC5F5C1816D7A700F953CD /* EventSpineTests */,
+				A63222A5197D55AA00607F40 /* Source */,
+				A6FC5F3D1816D7A600F953CD /* Project */,
+				A6FC5F5C1816D7A700F953CD /* Tests */,
 				A6FC5F361816D7A600F953CD /* Frameworks */,
 				A6FC5F351816D7A600F953CD /* Products */,
 			);
@@ -119,65 +143,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6FC5F3D1816D7A600F953CD /* App */ = {
+		A6FC5F3D1816D7A600F953CD /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				A6FC5F6C1816D7FC00F953CD /* EventSpine */,
-				A6FC5F461816D7A600F953CD /* l5CCAppDelegate.h */,
-				A6FC5F471816D7A600F953CD /* l5CCAppDelegate.m */,
-				A6FC5F491816D7A600F953CD /* Main.storyboard */,
-				A6FC5F4C1816D7A600F953CD /* l5CCViewController.h */,
-				A6FC5F4D1816D7A600F953CD /* l5CCViewController.m */,
-				A6FC5F4F1816D7A600F953CD /* Images.xcassets */,
-				A6FC5F3E1816D7A600F953CD /* Supporting Files */,
+				A63222B0197D55B700607F40 /* ACAppDelegate.h */,
+				A63222B1197D55B700607F40 /* ACAppDelegate.m */,
+				A63222B2197D55B700607F40 /* ACViewController.h */,
+				A63222B3197D55B700607F40 /* ACViewController.m */,
+				A63222C5197D562200607F40 /* Supporting Files */,
 			);
-			name = App;
+			name = Project;
 			path = ListenSpine;
 			sourceTree = "<group>";
 		};
-		A6FC5F3E1816D7A600F953CD /* Supporting Files */ = {
+		A6FC5F5C1816D7A700F953CD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A6FC5F3F1816D7A600F953CD /* EventSpine-Info.plist */,
-				A6FC5F401816D7A600F953CD /* InfoPlist.strings */,
-				A6FC5F431816D7A600F953CD /* main.m */,
-				A6FC5F451816D7A600F953CD /* EventSpine-Prefix.pch */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A6FC5F5C1816D7A700F953CD /* EventSpineTests */ = {
-			isa = PBXGroup;
-			children = (
-				A6FC5F621816D7A700F953CD /* EventSpineTests.m */,
-				A6FC5F5D1816D7A700F953CD /* Supporting Files */,
-			);
-			name = EventSpineTests;
+			name = Tests;
 			path = ListenSpineTests;
-			sourceTree = "<group>";
-		};
-		A6FC5F5D1816D7A700F953CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A6FC5F5E1816D7A700F953CD /* EventSpineTests-Info.plist */,
-				A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A6FC5F6C1816D7FC00F953CD /* EventSpine */ = {
-			isa = PBXGroup;
-			children = (
-				A68C8F4A197D31A40060F973 /* _ESWeakKeyMutableDictionary.h */,
-				A68C8F4B197D31A40060F973 /* _ESWeakKeyMutableDictionary.m */,
-				A6694E17182271710037F365 /* ESDefs.h */,
-				A68C8F49197D27260060F973 /* EventSpine_Private.h */,
-				A68C8F4D197D3B3E0060F973 /* EventSpine_Private.m */,
-				A6FC5F6D1816D7FC00F953CD /* NSObject+EventSpine.h */,
-				A6FC5F6E1816D7FC00F953CD /* NSObject+EventSpine.m */,
-			);
-			name = EventSpine;
-			path = ListenSpine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = l5CC;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Club 15CC";
 				TargetAttributes = {
 					A6FC5F541816D7A600F953CD = {
@@ -257,9 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FC5F501816D7A600F953CD /* Images.xcassets in Resources */,
-				A6FC5F421816D7A600F953CD /* InfoPlist.strings in Resources */,
-				A6FC5F4B1816D7A600F953CD /* Main.storyboard in Resources */,
+				A63222C8197D564100607F40 /* Main.storyboard in Resources */,
+				A63222CB197D564A00607F40 /* InfoPlist.strings in Resources */,
+				A63222C4197D55B700607F40 /* Images.xcassets in Resources */,
+				A63222C3197D55B700607F40 /* EventSpine-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FC5F611816D7A700F953CD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FC5F441816D7A600F953CD /* main.m in Sources */,
-				A6FC5F4E1816D7A600F953CD /* l5CCViewController.m in Sources */,
-				A68C8F4F197D3C5A0060F973 /* EventSpine_Private.m in Sources */,
-				A6FC5F481816D7A600F953CD /* l5CCAppDelegate.m in Sources */,
-				A68C8F4C197D31A40060F973 /* _ESWeakKeyMutableDictionary.m in Sources */,
-				A6FC5F6F1816D7FC00F953CD /* NSObject+EventSpine.m in Sources */,
+				A63222AE197D55AA00607F40 /* EventSpine_Private.m in Sources */,
+				A63222AF197D55AA00607F40 /* NSObject+EventSpine.m in Sources */,
+				A63222BE197D55B700607F40 /* ACAppDelegate.m in Sources */,
+				A63222AD197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */,
+				A63222C0197D55B700607F40 /* main.m in Sources */,
+				A63222BF197D55B700607F40 /* ACViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FC5F631816D7A700F953CD /* EventSpineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,26 +289,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A6FC5F401816D7A600F953CD /* InfoPlist.strings */ = {
+		A63222C6197D564100607F40 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6FC5F411816D7A600F953CD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A6FC5F491816D7A600F953CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6FC5F4A1816D7A600F953CD /* Base */,
+				A63222C7197D564100607F40 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A6FC5F5F1816D7A700F953CD /* InfoPlist.strings */ = {
+		A63222C9197D564A00607F40 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6FC5F601816D7A700F953CD /* en */,
+				A63222CA197D564A00607F40 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -337,7 +312,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -376,7 +350,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -411,8 +384,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ListenSpine/EventSpine-Prefix.pch";
-				INFOPLIST_FILE = "ListenSpine/EventSpine-Info.plist";
+				GCC_PREFIX_HEADER = "Project/EventSpine-Prefix.pch";
+				INFOPLIST_FILE = "Project/EventSpine-Info.plist";
 				PRODUCT_NAME = EventSpine;
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,8 +397,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ListenSpine/EventSpine-Prefix.pch";
-				INFOPLIST_FILE = "ListenSpine/EventSpine-Info.plist";
+				GCC_PREFIX_HEADER = "Project/EventSpine-Prefix.pch";
+				INFOPLIST_FILE = "Project/EventSpine-Info.plist";
 				PRODUCT_NAME = EventSpine;
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,7 +407,6 @@
 		A6FC5F6A1816D7A700F953CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ListenSpine.app/ListenSpine";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -457,7 +429,6 @@
 		A6FC5F6B1816D7A700F953CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ListenSpine.app/ListenSpine";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

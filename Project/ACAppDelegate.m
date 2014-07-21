@@ -1,15 +1,15 @@
 //
-//  l5CCAppDelegate.m
+//  ACAppDelegate.m
 //  ListenSpine
 //
 //  Created by Hari Karam Singh on 22/10/2013.
-//  Copyright (c) 2013 Club 15CC. All rights reserved.
+//  Copyright (c) 2013 Air Craft Media Ltd. All rights reserved.
 //
 
-#import "l5CCAppDelegate.h"
+#import "ACAppDelegate.h"
 #import "NSObject+EventSpine.h"
 
-@implementation l5CCAppDelegate
+@implementation ACAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

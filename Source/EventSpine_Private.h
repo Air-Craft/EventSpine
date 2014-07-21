@@ -3,7 +3,7 @@
 //  EventSpine
 //
 //  Created by Hari Karam Singh on 21/07/2014.
-//  Copyright (c) 2014 Club 15CC. All rights reserved.
+//  Copyright (c) 2014 Air Craft Media Ltd. All rights reserved.
 //
 
 #ifndef EventSpine_EventSpine_Private_h

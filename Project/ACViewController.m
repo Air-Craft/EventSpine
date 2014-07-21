@@ -1,18 +1,18 @@
 //
-//  l5CCViewController.m
+//  ACViewController.m
 //  ListenSpine
 //
 //  Created by Hari Karam Singh on 22/10/2013.
-//  Copyright (c) 2013 Club 15CC. All rights reserved.
+//  Copyright (c) 2013 Air Craft Media Ltd. All rights reserved.
 //
 
-#import "l5CCViewController.h"
+#import "ACViewController.h"
 
-@interface l5CCViewController ()
+@interface ACViewController ()
 
 @end
 
-@implementation l5CCViewController
+@implementation ACViewController
 
 - (void)viewDidLoad
 {
