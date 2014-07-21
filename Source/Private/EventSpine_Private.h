@@ -10,7 +10,6 @@
 #define EventSpine_EventSpine_Private_h
 
 #import "_ESWeakKeyMutableDictionary.h"
-#import "ESDefs.h"
 
 /** Target -> Array of _ESListenerEntry */
 extern _ESWeakKeyMutableDictionary * _ESListenerEntriesDict;

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A63222AD197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */; };
-		A63222AE197D55AA00607F40 /* EventSpine_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222AA197D55AA00607F40 /* EventSpine_Private.m */; };
 		A63222AF197D55AA00607F40 /* NSObject+EventSpine.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */; };
 		A63222BE197D55B700607F40 /* ACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222B1197D55B700607F40 /* ACAppDelegate.m */; };
 		A63222BF197D55B700607F40 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222B3197D55B700607F40 /* ACViewController.m */; };
@@ -17,6 +15,8 @@
 		A63222C4197D55B700607F40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63222BD197D55B700607F40 /* Images.xcassets */; };
 		A63222C8197D564100607F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63222C6197D564100607F40 /* Main.storyboard */; };
 		A63222CB197D564A00607F40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A63222C9197D564A00607F40 /* InfoPlist.strings */; };
+		A63222D1197D587D00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222CE197D587D00607F40 /* _ESWeakKeyMutableDictionary.m */; };
+		A63222D2197D587D00607F40 /* EventSpine_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = A63222D0197D587D00607F40 /* EventSpine_Private.m */; };
 		A6FC5F381816D7A600F953CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F371816D7A600F953CD /* Foundation.framework */; };
 		A6FC5F3A1816D7A600F953CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F391816D7A600F953CD /* CoreGraphics.framework */; };
 		A6FC5F3C1816D7A600F953CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FC5F3B1816D7A600F953CD /* UIKit.framework */; };
@@ -36,11 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A63222A6197D55AA00607F40 /* _ESWeakKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ESWeakKeyMutableDictionary.h; sourceTree = "<group>"; };
-		A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ESWeakKeyMutableDictionary.m; sourceTree = "<group>"; };
-		A63222A8197D55AA00607F40 /* ESDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDefs.h; sourceTree = "<group>"; };
-		A63222A9197D55AA00607F40 /* EventSpine_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSpine_Private.h; sourceTree = "<group>"; };
-		A63222AA197D55AA00607F40 /* EventSpine_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSpine_Private.m; sourceTree = "<group>"; };
 		A63222AB197D55AA00607F40 /* NSObject+EventSpine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EventSpine.h"; sourceTree = "<group>"; };
 		A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EventSpine.m"; sourceTree = "<group>"; };
 		A63222B0197D55B700607F40 /* ACAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACAppDelegate.h; path = Project/ACAppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -53,6 +48,10 @@
 		A63222BD197D55B700607F40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Project/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A63222C7197D564100607F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Project/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		A63222CA197D564A00607F40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Project/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		A63222CD197D587D00607F40 /* _ESWeakKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ESWeakKeyMutableDictionary.h; sourceTree = "<group>"; };
+		A63222CE197D587D00607F40 /* _ESWeakKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ESWeakKeyMutableDictionary.m; sourceTree = "<group>"; };
+		A63222CF197D587D00607F40 /* EventSpine_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSpine_Private.h; sourceTree = "<group>"; };
+		A63222D0197D587D00607F40 /* EventSpine_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSpine_Private.m; sourceTree = "<group>"; };
 		A6FC5F341816D7A600F953CD /* EventSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,11 +87,7 @@
 		A63222A5197D55AA00607F40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A63222A6197D55AA00607F40 /* _ESWeakKeyMutableDictionary.h */,
-				A63222A7197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m */,
-				A63222A8197D55AA00607F40 /* ESDefs.h */,
-				A63222A9197D55AA00607F40 /* EventSpine_Private.h */,
-				A63222AA197D55AA00607F40 /* EventSpine_Private.m */,
+				A63222CC197D587D00607F40 /* Private */,
 				A63222AB197D55AA00607F40 /* NSObject+EventSpine.h */,
 				A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */,
 			);
@@ -110,6 +105,17 @@
 				A63222BD197D55B700607F40 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A63222CC197D587D00607F40 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				A63222CD197D587D00607F40 /* _ESWeakKeyMutableDictionary.h */,
+				A63222CE197D587D00607F40 /* _ESWeakKeyMutableDictionary.m */,
+				A63222CF197D587D00607F40 /* EventSpine_Private.h */,
+				A63222D0197D587D00607F40 /* EventSpine_Private.m */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 		A6FC5F2B1816D7A600F953CD = {
@@ -262,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63222AE197D55AA00607F40 /* EventSpine_Private.m in Sources */,
 				A63222AF197D55AA00607F40 /* NSObject+EventSpine.m in Sources */,
+				A63222D1197D587D00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */,
+				A63222D2197D587D00607F40 /* EventSpine_Private.m in Sources */,
 				A63222BE197D55B700607F40 /* ACAppDelegate.m in Sources */,
-				A63222AD197D55AA00607F40 /* _ESWeakKeyMutableDictionary.m in Sources */,
 				A63222C0197D55B700607F40 /* main.m in Sources */,
 				A63222BF197D55B700607F40 /* ACViewController.m in Sources */,
 			);

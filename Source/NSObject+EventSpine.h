@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ESDefs.h"
-
 
 /////////////////////////////////////////////////////////////////////////
 #pragma mark - Defs
 /////////////////////////////////////////////////////////////////////////
+
+@class _ESListenerEntry;
+
+/** Opaque type representing the listener object returned when you register to listen to an event */
+typedef _ESListenerEntry *ESListener;
+
 
 //#ifndef weakify
 //#define weakify(VAR) \

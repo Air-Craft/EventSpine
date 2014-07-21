@@ -8,7 +8,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ESDefs.h"
 #import "EventSpine_Private.h"
 
 
