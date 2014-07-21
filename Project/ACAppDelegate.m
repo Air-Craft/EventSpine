@@ -7,7 +7,7 @@
 //
 
 #import "ACAppDelegate.h"
-#import "NSObject+EventSpine.h"
+#import "EventSpine.h"
 
 @implementation ACAppDelegate
 

@@ -52,6 +52,7 @@
 		A63222CE197D587D00607F40 /* _ESWeakKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ESWeakKeyMutableDictionary.m; sourceTree = "<group>"; };
 		A63222CF197D587D00607F40 /* EventSpine_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSpine_Private.h; sourceTree = "<group>"; };
 		A63222D0197D587D00607F40 /* EventSpine_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSpine_Private.m; sourceTree = "<group>"; };
+		A63222D4197D58D500607F40 /* EventSpine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventSpine.h; sourceTree = "<group>"; };
 		A6FC5F341816D7A600F953CD /* EventSpine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSpine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC5F371816D7A600F953CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6FC5F391816D7A600F953CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A63222CC197D587D00607F40 /* Private */,
+				A63222D4197D58D500607F40 /* EventSpine.h */,
 				A63222AB197D55AA00607F40 /* NSObject+EventSpine.h */,
 				A63222AC197D55AA00607F40 /* NSObject+EventSpine.m */,
 			);
