@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 #import "l5CCAppDelegate.h"
-#import "ESMeta.h"
-#import "NSObject+EventSpine.h"
 
 int main(int argc, char * argv[])
 {

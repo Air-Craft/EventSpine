@@ -7,14 +7,32 @@
 //
 
 #import "l5CCAppDelegate.h"
-
-#import "ESMeta.h"
 #import "NSObject+EventSpine.h"
 
 @implementation l5CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSObject *target = NSObject.new;
+    
+    
+    [self listenTo:@"success" on:target do:^(id target, id one, id two, id three) {
+        NSLog(@"%@, %@, %@", one, two, three);
+    }];
+//    
+//    [self listenOnceTo:@"success" on:target unless:@"error" do:^(id target, NSString *arg1, NSString *arg2) {
+//        
+//        NSLog(@"target: %@", target);
+//        NSLog(@"%@, %@", arg1, arg2, arg3);
+//    }];
+    
+//    [target trigger:@"error" args:@"sdfdsf", @2390, nil];
+    
+    [target trigger:@"success" args:@"sdsd", @5, @10, nil];
+    [target trigger:@"success" args:@"sdsd", @5, @10, nil];
+    [target trigger:@"success" args:@"sdsd", @5, @10, nil];
+    
+    
     [self doSomething];
     
     // Override point for customization after application launch.
@@ -23,23 +41,7 @@
 
 - (void)doSomething
 {
-    ESEventBlk blk = ^(id target, ...) {
-        NSString *str1, *str2;
-        float f1;
-        long long ll;
-        @localize(ll, f1, str1);
-        
-        NSLog(@"%lld %f %@ %@", ll, f1, str1, str2);
-    };
     
-    
-    NSString *yo = @"sds";
-    
-    
-    
-    blk(yo, 1231241434LL, 3.0f, nil);
-    
-
 }
 
 
