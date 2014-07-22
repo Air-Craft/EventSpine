@@ -80,7 +80,12 @@
             [listeners removeObject:listener];
         }
         
-            // Collect the arguments into an array
+        // Check that the events match
+        if (![listener.event isEqualToString:event]) {
+            continue;
+        }
+        
+        // Collect the arguments into an array
         va_list args;
         va_start(args, arg1);
         NSMutableArray *argsArr = NSMutableArray.array;
@@ -92,18 +97,18 @@
         // Now call the block with the correct param count
         NSArray *a = argsArr;
         switch (a.count) {
-            case 0: listener.block(self, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
-            case 1: listener.block(self, a[0], nil, nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
-            case 2: listener.block(self, a[0], a[1], nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
-            case 3: listener.block(self, a[0], a[1], a[2], nil, nil, nil, nil, nil, nil, nil, nil); break;
-            case 4: listener.block(self, a[0], a[1], a[2], a[3], nil, nil, nil, nil, nil, nil, nil); break;
-            case 5: listener.block(self, a[0], a[1], a[2], a[3], a[4], nil, nil, nil, nil, nil, nil); break;
-            case 6: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], nil, nil, nil, nil, nil); break;
-            case 7: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], a[6], nil, nil, nil, nil); break;
-            case 8: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], nil, nil, nil); break;
-            case 9: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], nil, nil); break;
-            case 10: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], nil); break;
-            case 11: listener.block(self, a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]); break;
+            case 0: listener.block(nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
+            case 1: listener.block(a[0], nil, nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
+            case 2: listener.block(a[0], a[1], nil, nil, nil, nil, nil, nil, nil, nil, nil); break;
+            case 3: listener.block(a[0], a[1], a[2], nil, nil, nil, nil, nil, nil, nil, nil); break;
+            case 4: listener.block(a[0], a[1], a[2], a[3], nil, nil, nil, nil, nil, nil, nil); break;
+            case 5: listener.block(a[0], a[1], a[2], a[3], a[4], nil, nil, nil, nil, nil, nil); break;
+            case 6: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], nil, nil, nil, nil, nil); break;
+            case 7: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], a[6], nil, nil, nil, nil); break;
+            case 8: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], nil, nil, nil); break;
+            case 9: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], nil, nil); break;
+            case 10: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], nil); break;
+            case 11: listener.block(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]); break;
             default:
                 [NSException raise:NSInvalidArgumentException format:@"Maximum 11 paramaters please."];
                 break;
