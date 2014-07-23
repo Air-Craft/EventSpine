@@ -11,7 +11,7 @@
 
 @implementation UIViewController (EventSpine)
 
-+ (void)load
++ (void)useEventSpine
 {
     // Swizzle some methods to override while allowing call to originals
     void (^swizzle)(Class, SEL, SEL) = ^(Class c, SEL orig, SEL new){

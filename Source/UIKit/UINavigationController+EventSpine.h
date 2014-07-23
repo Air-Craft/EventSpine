@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /** 
- Set UINavVC's delegate to self to utilise this feature.  Setting
+ Set UINavVC's delegate to self to utilise this feature.  Overrides the delegate getter and forces it to self.  If you implement overrides in your subclass then be sure to call super
  
  @triggers "willShowViewController" (UIViewController destinationVC, NSNumber *animated)
 

@@ -16,4 +16,7 @@
  */
 @interface UIViewController (EventSpine)
 
+/** Call to swizzle out the messages */
++ (void)useEventSpine;
+
 @end
